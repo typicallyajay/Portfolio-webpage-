@@ -1,0 +1,245 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('assets/back.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+  
+  /* Navbar */
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 4px 0;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 30px;
+}
+
+/* Move Portfolio to the left and other links to the center */
+.navbar h2 {
+  margin-left: 30px; /* Add space from the left edge */
+  margin-right: 950px; /* Push other links to the center */
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.navbar a:hover {
+  color: #ADFF2F;
+}
+
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  /* Content Styling */
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+  
+  /* Profile Picture */
+  .profile-pic {
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Worked With Section */
+  .worked-with {
+    margin-top: 50px;
+    color: #666;
+    text-align: center;
+  }
+  .logos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .logos img {
+    width: 100px;
+    filter: brightness(0) invert(0.6);
+  }
+  /* Skills Table */
+.skills-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  color: #cccccc;
+}
+
+.skills-table thead {
+  background-color: #1a1a1a;
+  color: greenyellow;
+}
+
+.skills-table th, .skills-table td {
+  border: 1px solid #333333;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.skills-table tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.skills-table tr:nth-child(odd) {
+  background-color: #0d0d0d;
+}
+
+.skills-table th {
+  font-weight: bold;
+}
+/* Projects Section Styling */
+.projects-section {
+  display: flex; /* Use Flexbox */
+  gap: 20px; /* Add space between project cards */
+  justify-content: center; /* Center projects horizontally */
+  flex-wrap: wrap; /* Ensure responsiveness by wrapping rows when necessary */
+  margin-top: 20px;
+}
+
+.project {
+  background-color: #1a1a1a; /* Add background to project cards */
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Set a fixed width for uniformity */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.project:hover {
+  transform: translateY(-5px); /* Add a hover effect for interactivity */
+  transition: all 0.3s ease-in-out;
+}
+
+.project img,
+.project video {
+  max-width: 100%; /* Ensure images/videos are responsive */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  color: greenyellow; /* Use theme color for titles */
+  margin: 10px 0;
+}
+
+.project p {
+  color: #cccccc; /* Use light grey for descriptions */
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  color: #1a1a1a;
+  background-color: greenyellow; /* Button with theme color */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  background-color: #cccccc; /* Hover effect for buttons */
+  color: #1a1a1a;
+}
+
+
+/* List Styling */
+ul.info-list, ol.timeline-list {
+  margin: 20px auto;
+  padding-left: 40px;
+  max-width: 700px;
+  text-align: left;
+}
+
+ul.info-list li, ol.timeline-list li {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #ffffff; /* Default text color matches the theme */
+}
+
+ul.info-list li:hover, ol.timeline-list li:hover {
+  color: greenyellow; /* Highlight on hover with theme color */
+  transition: color 0.3s ease;
+}
+
+/* Different Bullet and Number Styles */
+ul.info-list {
+  list-style-type: disc; /* Disc bullets for unordered list */
+}
+
+ol.timeline-list {
+  list-style-type: decimal; /* Numbered for ordered list */
+}
+
+/* Heading Styling for Sections */
+h2 {
+  color: greenyellow; /* Theme color for headings */
+  margin-top: 30px;
+}
+/* Footer Styling */
+.footer {
+  width: 100%; /* Ensure footer takes the full width of the page */
+  background-color: transparent; /* Transparent background to contrast with content */
+  color: #cccccc; /* Light text color for readability */
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+  position: relative; /* Ensures it remains at the bottom of the page */
+}
+
+.footer p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.footer a {
+  color: greenyellow; /* Highlight theme color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+
+  
